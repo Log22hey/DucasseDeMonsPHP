@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8bafd3b3-c999-4a95-88c6-a37a11241f66" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Projet2021/lib/php/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/lib/php/public_footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/lib/php/public_menu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/page/accueil.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/StandardLiègeSeptembre2020.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj_garage/.idea/proj_garage.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projetTechnoInternet2021/Admin/Lib/php/admin_footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projetTechnoInternet2021/Admin/Lib/php/admin_liste_include.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projetTechnoInternet2021/Admin/Lib/php/admin_menu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projetTechnoInternet2021/Admin/Lib/php/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projetTechnoInternet2021/Admin/Lib/php/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projetTechnoInternet2021/Admin/Lib/php/pgConnect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projetTechnoInternet2021/Admin/Lib/php/verifier_connexion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projetTechnoInternet2021/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index.php" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pYsqoQevQjqyyCUoNHTrsaKIUU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Projet2021/admin/lib/php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\Projet2021\Projet2021\admin\lib\php" />
+      <recent name="C:\laragon\www\Projet2021\Projet2021\lib\php" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\Projet2021" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8bafd3b3-c999-4a95-88c6-a37a11241f66" name="Default Changelist" comment="" />
+      <created>1615371551503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615371551503</updated>
+      <workItem from="1615371553223" duration="1574000" />
+      <workItem from="1615374203035" duration="1933000" />
+      <workItem from="1615378437887" duration="1363000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="523" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615374326653">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="523" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1615374326653" />
+    <state x="603" y="355" key="NewPhpFileDialog" timestamp="1615378614830">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="603" y="355" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1615378614830" />
+  </component>
+</project>
