@@ -20,24 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bafd3b3-c999-4a95-88c6-a37a11241f66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Projet2021/lib/php/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/lib/php/public_footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/lib/php/public_menu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/page/accueil.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/StandardLiègeSeptembre2020.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../proj_garage/.idea/proj_garage.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projetTechnoInternet2021/Admin/Lib/php/admin_footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projetTechnoInternet2021/Admin/Lib/php/admin_liste_include.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projetTechnoInternet2021/Admin/Lib/php/admin_menu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projetTechnoInternet2021/Admin/Lib/php/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projetTechnoInternet2021/Admin/Lib/php/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projetTechnoInternet2021/Admin/Lib/php/pgConnect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projetTechnoInternet2021/Admin/Lib/php/verifier_connexion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projetTechnoInternet2021/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/ClientDB.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/ClientDB.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/Type.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/TypeDB.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/Univers.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/UniversDB.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/Vue_produit_univers_typeDB.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/panier.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/vue_accueil.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/vue_contact.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/vue_equipe.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/vue_panier.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/pgConnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/pgConnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/lib/php/public_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/lib/php/public_menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/page/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/accueil.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../index.php" beforeDir="false" />
     </list>
@@ -69,7 +73,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Projet2021/admin/lib/php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../proj_garage" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -79,19 +83,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\Projet2021" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -103,7 +94,9 @@
       <updated>1615371551503</updated>
       <workItem from="1615371553223" duration="1574000" />
       <workItem from="1615374203035" duration="1933000" />
-      <workItem from="1615378437887" duration="1363000" />
+      <workItem from="1615378437887" duration="1972000" />
+      <workItem from="1615462614738" duration="66000" />
+      <workItem from="1615549161247" duration="616000" />
     </task>
     <servers />
   </component>
@@ -127,6 +120,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="523" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1615374326653" />
+    <state x="548" y="186" key="FileChooserDialogImpl" timestamp="1615549182309">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="548" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1615549182309" />
     <state x="603" y="355" key="NewPhpFileDialog" timestamp="1615378614830">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
