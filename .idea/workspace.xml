@@ -19,34 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bafd3b3-c999-4a95-88c6-a37a11241f66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/vue_acteur.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/page/acteur.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/page/musée.php" afterDir="false" />
+    <list default="true" id="8bafd3b3-c999-4a95-88c6-a37a11241f66" name="Default Changelist" comment="2e commit">
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/StandardLiègeSeptembre2020.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../proj_garage/.idea/proj_garage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/Projet2021/v16/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/admin_footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/admin_footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/admin_liste_include.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/admin_liste_include.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/admin_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/admin_menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/Produit.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/ProduitDB.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/pgConnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/pgConnect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/verifier_connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/verifier_connexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/lib/php/public_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/lib/php/public_menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/page/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/accueil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/page/historique.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/historique.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../index.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +37,12 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -113,8 +99,16 @@
       <workItem from="1615378437887" duration="1972000" />
       <workItem from="1615462614738" duration="66000" />
       <workItem from="1615549161247" duration="616000" />
-      <workItem from="1615802055063" duration="11877000" />
+      <workItem from="1615802055063" duration="12219000" />
     </task>
+    <task id="LOCAL-00001" summary="2e commit">
+      <created>1615816123293</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615816123293</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +125,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2e commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="2e commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="523" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615374326653">
@@ -149,5 +147,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="603" y="355" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1615807396533" />
+    <state x="360" y="164" key="Vcs.Push.Dialog.v2" timestamp="1615816259093">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="360" y="164" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1615816259093" />
   </component>
 </project>
