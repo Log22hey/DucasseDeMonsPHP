@@ -1,4 +1,3 @@
-
 <?php
 if(file_exists('./admin/lib/php/pgConnect.php')){
     require './admin/lib/php/pgConnect.php';
