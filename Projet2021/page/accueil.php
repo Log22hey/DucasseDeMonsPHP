@@ -7,6 +7,7 @@ Bienvenue dans la partie public
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -17,8 +18,17 @@ Bienvenue dans la partie public
         <div class="carousel-item">
             <img src="./admin/images/2021.jpg" class="d-block w-100" alt="pas de Douou en 2021">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Pas de Doudou en 2021</h5>
-                <p>Les autorités montoises et les organisateurs du « Doudou » ont annoncé le mardi 23 février, l’annulation de la ducasse de Mons 2021, « sans surprise et pour des raisons évidentes de sécurité sanitaire ». Le « Doudou » ne se tiendra donc pas durant le week-end de la Trinité ni à un autre moment dans l’année.</p>
+                <h2><strong>Pas de Doudou en 2021</strong></h2>
+                <h3><strong>Les autorités montoises et les organisateurs du « Doudou » ont annoncé le mardi 23 février,
+                        l’annulation de la ducasse de Mons 2021, « sans surprise et pour des raisons évidentes de sécurité sanitaire ».
+                        Le « Doudou » ne se tiendra donc pas durant le week-end de la Trinité ni à un autre moment dans l’année.</strong></h3>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="./admin/images/1.jpg" class="d-block w-100" alt="Rendez-vous le 12 juin 2022">
+            <div class="carousel-caption d-none d-md-block">
+                <h2><strong>Rendez-vous le 12 juin 2022</strong></h2>
+                <h3><strong>Et les Montois ne périront pas !</strong></h3>
             </div>
         </div>
     </div>

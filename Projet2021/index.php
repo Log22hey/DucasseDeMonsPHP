@@ -10,14 +10,13 @@ $cnx = Connexion:: getInstance($dsn, $user, $pass);
 <html>
     <head> <meta charset="UTF-8">        
         <title>Ducasse de Mons</title>
-        <link rel="shorcut icon"  href="./admin/images/mons.jpg" />
+        <link rel="shorcut icon"  href="./admin/images/licon.JPG" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous"/>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
         <link rel="stylesheet" href="./admin/lib/css/custom2021.css" />
         <link rel="stylesheet" type="text/css" href="./admin/lib/css/2021Style.css"/>
-
     </head>
 
     <body class="container body">

@@ -16,17 +16,42 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bafd3b3-c999-4a95-88c6-a37a11241f66" name="Default Changelist" comment="2e commit">
+      <change afterPath="$PROJECT_DIR$/../Boulangerie/Boulangerie.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Logan2/.idea/Logan2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/licon.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/Membre.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/MembreDB.class.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/StandardLiègeSeptembre2020.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../proj_garage/.idea/proj_garage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Projet2021/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/mons.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/images/mons.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/css/2021Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/css/2021Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/Client.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/ClientDB.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/vue_acteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/vue_acteur.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/lib/php/public_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/lib/php/public_menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/page/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/accueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/page/acteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/acteur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/page/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/connexion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/page/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/inscription.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,27 +85,32 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../proj_garage" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Projet2021/admin/images" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\Projet2021\Projet2021\admin\images" />
+      <recent name="C:\laragon\www\Projet2021" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\Projet2021\Projet2021\admin\images" />
       <recent name="C:\laragon\www\Projet2021\Projet2021\admin\lib\php" />
       <recent name="C:\laragon\www\Projet2021\Projet2021\lib\php" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\Projet2021" />
-    </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,6 +130,7 @@
       <workItem from="1615462614738" duration="66000" />
       <workItem from="1615549161247" duration="616000" />
       <workItem from="1615802055063" duration="12219000" />
+      <workItem from="1615884849481" duration="12235000" />
     </task>
     <task id="LOCAL-00001" summary="2e commit">
       <created>1615816123293</created>
@@ -119,7 +150,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -135,14 +178,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="523" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1615374326653" />
-    <state x="548" y="186" key="FileChooserDialogImpl" timestamp="1615549182309">
+    <state x="498" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615887905512">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="548" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1615549182309" />
-    <state x="506" y="154" key="NewPhpClassDialog" timestamp="1615812490020">
+    <state x="498" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1615887905512" />
+    <state x="548" y="186" key="FileChooserDialogImpl" timestamp="1615894838824">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="506" y="154" key="NewPhpClassDialog/0.0.1536.864@0.0.1536.864" timestamp="1615812490020" />
+    <state x="548" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1615894838824" />
+    <state x="506" y="154" key="NewPhpClassDialog" timestamp="1615893133243">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="506" y="154" key="NewPhpClassDialog/0.0.1536.864@0.0.1536.864" timestamp="1615893133243" />
     <state x="603" y="355" key="NewPhpFileDialog" timestamp="1615807396533">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

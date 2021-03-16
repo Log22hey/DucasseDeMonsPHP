@@ -1,7 +1,7 @@
 <?php
 
-class Client {
-
+class Membre
+{
     private $_attributs = array();
 
     public function __construct(array $data) {
@@ -20,7 +20,7 @@ class Client {
         }
     }
 
-    public function __set($nom, $valeur) { 
+    public function __set($nom, $valeur) {
         $this->_attributs[$nom] = $valeur;
     }
 }

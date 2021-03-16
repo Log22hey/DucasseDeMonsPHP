@@ -1,57 +1,68 @@
 <?php
-if(isset($_GET['ajouter'])) {
+if(isset($_GET['submit_login'])) {
     extract($_GET, EXTR_OVERWRITE);
 
-    if (empty($nom) || empty($email) || empty($password) || empty($adresse) || empty($numero) || empty($localite) || empty($cp)) {
+    if (empty($nom) || empty($prenom) || empty($email) || empty($mdp) || empty($adresse) || empty($ville) || empty($code_postal)) {
         $erreur = "<span class='txtRouge txtGras'>Veuillez remplir tous les champs</span>";
     } else {
-           
-           $cl = new ClientDB($cnx);
-           $retour = $cl->addClient($_GET);
-           if($retour==1)
-               echo 'insertion effectuÈe';
-           else if($retour==2)
-               echo 'personne dÈj‡ encodÈe';
-           //var_dump($_GET);
+
+        $mb = new MembreDB($cnx);
+        $retour = $mb->addMembre($_GET);
+        if($retour==1)
+            echo 'insertion effectu√©e';
+        else if($retour==2)
+            echo 'personne d√©j√† encod√©e';
+        //var_dump($_GET);
     }
 }
 ?>
 
-<h5 class="card-header info-color white-text text-center py-4">
-        Devenir membre
-    </h5>
-<div class="foms">
-    <div class="card-body px-lg-5">
-        <form  action="<?php print $_SERVER['PHP_SELF']; ?>" method="get"">
-            <div class="form-group row">
-                <input type="text" name="nom" class="form-control form-control-md" id="colFormLabelSm" placeholder="">
-                <label for="colFormLabelSm" class="col-sm-2 col-form-label txtGras text-right col-form-label-md offset-3">Votre nom </label>
-            </div>
-            <div class="form-group row">
-                <input type="email" name="email" class="form-control" id="colFormLabel" placeholder="mons@bel.be">
-                <label for="colFormLabel" class="col-sm-2 text-right txtGras col-form-label offset-3">Votre email</label>
-            </div>
-            <div class="form-group row">
-                <input type="password" name="password" class="form-control" id="colFormLabel" placeholder="">
-                <label for="colFormLabel" class="col-sm-2 text-right txtGras col-form-label offset-3">Votre password</label>
-            </div>
-            <div class="form-group row">
-                <input type="text" name="adresse" class="form-control" id="colFormLabel" placeholder="">
-                <label for="colFormLabel" class="col-sm-2 text-right txtGras col-form-label offset-3">Votre adresse</label>
-            </div>
-            <div class="form-group row">
-                <input type="number" name="numero" class="form-control" id="colFormLabel" placeholder="">
-                <label for="colFormLabel" class="col-sm-2 text-right txtGras col-form-label offset-3">Votre numero</label>
-            </div>
-            <div class="form-group row">
-                <input type="text" name="localite" class="form-control" id="colFormLabel" placeholder="">
-                <label for="colFormLabel" class="col-sm-2 text-right txtGras col-form-label offset-3">Votre localite</label>
-            </div>
-            <div class="form-group row">
-                <input type="number" name="cp" class="form-control" id="colFormLabel" placeholder="">
-                <label for="colFormLabel" class="col-sm-2 text-right txtGras col-form-label offset-3">Votre code postal</label>
-            </div>
-            <input type="submit" name="submit_login" class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" value="ajouter" >
-        </form>
+<form class="ecartTop3pc" action="<?php print $_SERVER['PHP_SELF']; ?>" method="get">
+    <div class="form-group row">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label txtGras text-right col-form-label-md offset-3">Nom </label>
+        <div class="col-sm-3 ">
+            <input type="text" name="nom" class="form-control form-control-md" id="colFormLabelSm" placeholder="votre nom">
+        </div>
     </div>
-</div>
+    <div class="form-group row">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label txtGras text-right col-form-label-md offset-3">Pr√©nom</label>
+        <div class="col-sm-3 ">
+            <input type="text" name="prenom" class="form-control form-control-md" id="colFormLabelSm" placeholder="votre prenom">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label txtGras text-right col-form-label-md offset-3">Email </label>
+        <div class="col-sm-3 ">
+            <input type="email" name="email" class="form-control form-control-md" id="colFormLabelSm" placeholder="Mons@bel.be">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="colFormLabel" class="col-sm-2 text-right txtGras col-form-label offset-3">Mot de passe</label>
+        <div class="col-sm-3">
+            <input type="password" name="mdp" class="form-control" id="colFormLabel" placeholder="mot de passe">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label txtGras text-right col-form-label-md offset-3">Adresse </label>
+        <div class="col-sm-3 ">
+            <input type="text" name="adresse" class="form-control form-control-md" id="colFormLabelSm" placeholder="votre adresse">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label txtGras text-right col-form-label-md offset-3">Ville</label>
+        <div class="col-sm-3 ">
+            <input type="text" name="ville" class="form-control form-control-md" id="colFormLabelSm" placeholder="Mons">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label txtGras text-right col-form-label-md offset-3">Localit√©</label>
+        <div class="col-sm-3 ">
+            <input type="number" name="code_postal" class="form-control form-control-md" id="colFormLabelSm" placeholder="7000">
+        </div>
+    </div><br><br>
+    <div class="form-group row">
+        <div class="col-sm-4 offset-5">
+            <input type="submit" name="submit_login" class="btn btn-danger"  placeholder="col-form-label-lg" value="Valider" >
+        </div>
+    </div>
+</form><br><br>

@@ -1,32 +1,34 @@
-<nav class="navbar navbar-expand-md navbar-light">
-
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent ">
-  <div></div>
-    <ul class="navbar-nav mr-auto">
-      <li   class="alert alert-primary" role="alert">
-          <a class="nav-link" href="./index.php?page=accueil.php" class="alert-link"class="aligner txtGras"><h3 class='para'>Accueil</h3> </a>
-      </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Le Doudou
-            </a>
-            <div class="dropdown-menu a" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./index.php?page=historique.php">Historique et déroulement</a>
-                <a class="dropdown-item" href="./index.php?page=acteur.php">Acteur</a>
-                <a class="dropdown-item" href="./index.php?page=musée.php">Découvrir ou redécouvrir le musée du Doudou</a>
-                <div class="dropdown-divider"></div>
-            </div>
-        </li>
-      <li class="alert alert-secondary" role="alert">
-          <a class="nav-link" href="./index.php?page=boutique.php"  class="alert-link"><h3 class='para'>Boutique</h3></a>
-      </li>
-      <li class="alert alert-secondary" role="alert">
-          <a class="nav-link" href="./index.php?page=inscription.php"  class="alert-link"><h3 class='para'>Inscription</h3></a>
-      </li>
-      <li class="alert alert-secondary" role="alert">
-        <a class="nav-link" href="./index.php?page=connexion.php ">Se connecter <span class="sr-only">(current)</span></a>
-      </li>
-    </ul>
-  </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <a class="navbar-brand" href="./index.php?page=accueil.php"><img src="./admin/images/mons.jpg" class="d-block w-100" alt="Home"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Le Doudou
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="./index.php?page=historique.php">Historique et déroulement</a></li>
+                    <li><a class="dropdown-item" href="./index.php?page=acteur.php">Acteur</a></li>
+                    <li><a class="dropdown-item" href="./index.php?page=musée.php">Découvrir ou redécouvrir le musée du Doudou</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                </ul>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./index.php?page=boutique.php">La boutique <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./index.php?page=inscription.php">inscription <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./index.php?page=connexion.php">Se connecter<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
 </nav>
+<br>

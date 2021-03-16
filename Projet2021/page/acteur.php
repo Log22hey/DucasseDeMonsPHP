@@ -1,5 +1,7 @@
 <?php
-$vue = new vue_acteur($cnx);
+if (!empty($cnx)) {
+    $vue = new vue_acteur($cnx);
+}
 
 $liste = array();
 $liste = null;
