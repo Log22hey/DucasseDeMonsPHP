@@ -21,19 +21,13 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bafd3b3-c999-4a95-88c6-a37a11241f66" name="Default Changelist" comment="2e commit">
+    <list default="true" id="8bafd3b3-c999-4a95-88c6-a37a11241f66" name="Default Changelist" comment="commit du 16 mars 2021">
       <change afterPath="$PROJECT_DIR$/../Boulangerie/Boulangerie.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Logan2/.idea/Logan2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/icon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/licon.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/Membre.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/MembreDB.class.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/StandardLiègeSeptembre2020.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/misc.xml" afterDir="false" />
@@ -41,17 +35,12 @@
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../proj_garage/.idea/proj_garage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/mons.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/images/mons.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/css/2021Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/css/2021Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/Client.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/ClientDB.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/vue_acteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/vue_acteur.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/chinchinp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/images/chinchinp.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/chinchinperso.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/images/chinchinperso.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/hommeB.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/images/hommeB.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/hommedeF.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/images/hommedeF.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/sg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/images/sg.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet2021/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/lib/php/public_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/lib/php/public_menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/page/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/accueil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/page/acteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/acteur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/page/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/connexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/page/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/inscription.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,21 +90,6 @@
       <recent name="C:\laragon\www\Projet2021\Projet2021\lib\php" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -130,7 +104,8 @@
       <workItem from="1615462614738" duration="66000" />
       <workItem from="1615549161247" duration="616000" />
       <workItem from="1615802055063" duration="12219000" />
-      <workItem from="1615884849481" duration="12235000" />
+      <workItem from="1615884849481" duration="12594000" />
+      <workItem from="1615911703540" duration="1342000" />
     </task>
     <task id="LOCAL-00001" summary="2e commit">
       <created>1615816123293</created>
@@ -139,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615816123293</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit du 16 mars 2021">
+      <created>1615897834265</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615897834265</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,19 +132,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -171,7 +141,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2e commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="2e commit" />
+    <MESSAGE value="commit du 16 mars 2021" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit du 16 mars 2021" />
   </component>
   <component name="WindowStateProjectService">
     <state x="523" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615374326653">
@@ -194,9 +165,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="603" y="355" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1615807396533" />
-    <state x="360" y="164" key="Vcs.Push.Dialog.v2" timestamp="1615816259093">
+    <state x="360" y="164" key="Vcs.Push.Dialog.v2" timestamp="1615897897869">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="360" y="164" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1615816259093" />
+    <state x="360" y="164" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1615897897869" />
   </component>
 </project>
