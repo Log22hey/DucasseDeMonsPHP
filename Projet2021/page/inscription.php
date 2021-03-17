@@ -2,12 +2,12 @@
 if(isset($_GET['submit_login'])) {
     extract($_GET, EXTR_OVERWRITE);
 
-    if (empty($nom) || empty($prenom) || empty($email) || empty($mdp) || empty($adresse) || empty($ville) || empty($code_postal)) {
+    if (empty($nom) || empty($email) || empty($password) || empty($adresse) || empty($numero) || empty($localite) || empty($cp)) {
         $erreur = "<span class='txtRouge txtGras'>Veuillez remplir tous les champs</span>";
     } else {
 
-        $mb = new MembreDB($cnx);
-        $retour = $mb->addMembre($_GET);
+        $cl = new ClientDB($cnx);
+        $retour = $cl->addClient($_GET);
         if($retour==1)
             echo 'insertion effectuée';
         else if($retour==2)
@@ -21,13 +21,7 @@ if(isset($_GET['submit_login'])) {
     <div class="form-group row">
         <label for="colFormLabelSm" class="col-sm-2 col-form-label txtGras text-right col-form-label-md offset-3">Nom </label>
         <div class="col-sm-3 ">
-            <input type="text" name="nom" class="form-control form-control-md" id="colFormLabelSm" placeholder="votre nom">
-        </div>
-    </div>
-    <div class="form-group row">
-        <label for="colFormLabelSm" class="col-sm-2 col-form-label txtGras text-right col-form-label-md offset-3">Prénom</label>
-        <div class="col-sm-3 ">
-            <input type="text" name="prenom" class="form-control form-control-md" id="colFormLabelSm" placeholder="votre prenom">
+            <input type="text" name="nom" class="form-control form-control-md" id="colFormLabelSm" placeholder="">
         </div>
     </div>
     <div class="form-group row">
@@ -39,30 +33,37 @@ if(isset($_GET['submit_login'])) {
     <div class="form-group row">
         <label for="colFormLabel" class="col-sm-2 text-right txtGras col-form-label offset-3">Mot de passe</label>
         <div class="col-sm-3">
-            <input type="password" name="mdp" class="form-control" id="colFormLabel" placeholder="mot de passe">
+            <input type="password" name="password" class="form-control" id="colFormLabel" placeholder="">
         </div>
     </div>
     <div class="form-group row">
         <label for="colFormLabelSm" class="col-sm-2 col-form-label txtGras text-right col-form-label-md offset-3">Adresse </label>
         <div class="col-sm-3 ">
-            <input type="text" name="adresse" class="form-control form-control-md" id="colFormLabelSm" placeholder="votre adresse">
+            <input type="text" name="adresse" class="form-control form-control-md" id="colFormLabelSm" placeholder="Grand place">
         </div>
     </div>
     <div class="form-group row">
-        <label for="colFormLabelSm" class="col-sm-2 col-form-label txtGras text-right col-form-label-md offset-3">Ville</label>
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label txtGras text-right col-form-label-md offset-3">Numéro</label>
         <div class="col-sm-3 ">
-            <input type="text" name="ville" class="form-control form-control-md" id="colFormLabelSm" placeholder="Mons">
+            <input type="text" name="numero" class="form-control form-control-md" id="colFormLabelSm" placeholder="22">
         </div>
     </div>
     <div class="form-group row">
         <label for="colFormLabelSm" class="col-sm-2 col-form-label txtGras text-right col-form-label-md offset-3">Localité</label>
         <div class="col-sm-3 ">
-            <input type="number" name="code_postal" class="form-control form-control-md" id="colFormLabelSm" placeholder="7000">
-        </div>
-    </div><br><br>
-    <div class="form-group row">
-        <div class="col-sm-4 offset-5">
-            <input type="submit" name="submit_login" class="btn btn-danger"  placeholder="col-form-label-lg" value="Valider" >
+            <input type="text" name="localite" class="form-control form-control-md" id="colFormLabelSm" placeholder="Mons">
         </div>
     </div>
-</form><br><br>
+    <div class="form-group row">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label txtGras text-right col-form-label-md offset-3">Code postal</label>
+        <div class="col-sm-3 ">
+            <input type="text" name="cp" class="form-control form-control-md" id="colFormLabelSm" placeholder="7000">
+        </div>
+    </div><br>
+    <div class="form-group row">
+        <div class="col-sm-4 offset-5">
+            <input type="submit" name="submit_login" class="btn btn-light"  placeholder="col-form-label-lg" value="s'enregister" >
+        </div>
+    </div>
+</form>
+<br><br>

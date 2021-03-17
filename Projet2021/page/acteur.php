@@ -23,7 +23,7 @@ if ($liste != null) {
 
             <div >
                 <div class="col-sm-4">
-                    <img src="admin/images/<?php print $liste[$i]['image']; ?>" alt="Photo"/><br/><br/>
+                    <img src="admin/images/<?php print $liste[$i]['image']; ?>" alt="Photo" height="250" width="250"/><br/><br/>
                 </div>
                 <div class="col-sm-6">
                     <?php

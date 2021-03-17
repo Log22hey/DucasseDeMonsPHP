@@ -22,12 +22,10 @@
             <li class="nav-item active">
                 <a class="nav-link" href="#"><span class="sr-only"></span></a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="./index.php?page=inscription.php">inscription <span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="./index.php?page=connexion.php">Se connecter<span class="sr-only">(current)</span></a>
-            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="./index.php?page=inscription.php"><img src="./admin/images/inscription.png" class="d-block w-100" alt="Home"></a></li>
+            <li><a href="./index.php?page=connexion.php"><img src="./admin/images/login.png" class="d-block w-100" alt="Home"></a></li>
         </ul>
     </div>
 </nav>

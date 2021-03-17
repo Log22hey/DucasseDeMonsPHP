@@ -1,10 +1,10 @@
 <?php
 if(isset($_POST['submit_login'])){
     extract($_POST,EXTR_OVERWRITE);
-    $log = new MembreDB($cnx);
-    $membre = $log->getMembre($email, $mdp);
-    var_dump($membre);
-    if(is_null($membre)){
+    $log = new ClientDB($cnx);
+    $client = $log->getClient($email, $password);
+    var_dump($client);
+    if(is_null($client)){
         print "<br/>Données incorrectes";
     }
     else {
@@ -25,13 +25,13 @@ if(isset($_POST['submit_login'])){
     <div class="form-group row">
         <label for="colFormLabel" class="col-sm-2 text-right txtGras col-form-label offset-3">Mot de passe</label>
         <div class="col-sm-3">
-            <input type="password" name="password" class="form-control" id="colFormLabel" placeholder="votre mot de passe">
+            <input type="password" name="password" class="form-control" id="colFormLabel" placeholder="mot de passe">
         </div>
-    </div><br><br>
+    </div><br>
     <div class="form-group row">
         <div class="col-sm-4 offset-5">
             <input type="hidden" name="page" value="connexion.php"/>
-            <input type="submit" name="submit_login" class="btn btn-danger"  placeholder="col-form-label-lg" value="Connexion" >
+            <input type="submit" name="submit_login" class="btn btn-light"  placeholder="col-form-label-lg" value="Connexion" >
         </div>
     </div>
 </form>
