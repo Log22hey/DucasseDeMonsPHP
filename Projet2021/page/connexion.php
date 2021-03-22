@@ -36,3 +36,12 @@ if(isset($_POST['submit_login'])){
     </div>
 </form>
 <br><br>
+
+<div class="bouton">
+    <p>
+        Créez un compte si vous n’en avez pas encore un
+      <br>
+            <a href="./index.php?page=inscription.php"><button>Nouveau compte</button> </a>
+    </p>
+</div>
+<br><br>

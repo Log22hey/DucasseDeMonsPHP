@@ -28,8 +28,12 @@
     <list default="true" id="8bafd3b3-c999-4a95-88c6-a37a11241f66" name="Default Changelist" comment="commit du 16 mars 2021">
       <change afterPath="$PROJECT_DIR$/../Boulangerie/Boulangerie.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Logan2/.idea/Logan2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/Client.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/ClientDB.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/connect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/footer2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/footer3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/footer4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/footer5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/footer6.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/StandardLiègeSeptembre2020.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/misc.xml" afterDir="false" />
@@ -37,19 +41,18 @@
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../proj_garage/.idea/proj_garage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/chinchinp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/images/chinchinp.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/chinchinperso.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/images/chinchinperso.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/hommeB.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/images/hommeB.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/hommedeF.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/images/hommedeF.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/poliade.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/images/poliade.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/sg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/images/sg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/chasse.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/images/chasse.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/feu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/inscription.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/invlacopou1an.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/css/2021Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/css/2021Style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/Membre.class.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/MembreDB.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/lib/php/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/lib/php/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/lib/php/public_footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/lib/php/public_footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet2021/lib/php/public_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/lib/php/public_menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/page/acteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/acteur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet2021/page/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/connexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/page/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/inscription.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/page/historique.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/historique.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/page/musée.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/musée.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,28 +92,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Logan2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\Projet2021\Projet2021\admin\images" />
-      <recent name="C:\laragon\www\Projet2021" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\laragon\www\Projet2021\Projet2021\admin\images" />
       <recent name="C:\laragon\www\Projet2021\Projet2021\admin\lib\php" />
       <recent name="C:\laragon\www\Projet2021\Projet2021\lib\php" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\Projet2021\Projet2021\admin\images" />
+      <recent name="C:\laragon\www\Projet2021" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -128,7 +118,8 @@
       <workItem from="1615802055063" duration="12219000" />
       <workItem from="1615884849481" duration="12594000" />
       <workItem from="1615911703540" duration="1513000" />
-      <workItem from="1615970539309" duration="6664000" />
+      <workItem from="1615970539309" duration="7127000" />
+      <workItem from="1616401752006" duration="9198000" />
     </task>
     <task id="LOCAL-00001" summary="2e commit">
       <created>1615816123293</created>
@@ -151,7 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615914128767</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit du 17 mars">
+      <created>1615977555675</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615977555675</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit du 17 mars">
+      <created>1615977775646</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615977775646</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +177,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2e commit" />
     <MESSAGE value="commit du 16 mars 2021" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit du 16 mars 2021" />
+    <MESSAGE value="commit du 17 mars" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit du 17 mars" />
   </component>
   <component name="WindowStateProjectService">
     <state x="523" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615374326653">
@@ -195,10 +201,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="603" y="355" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1615807396533" />
-    <state x="360" y="164" key="Vcs.Push.Dialog.v2" timestamp="1615914205947">
+    <state x="574" y="134" key="RollbackChangesDialog" timestamp="1615977703293">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="360" y="164" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1615914205947" />
+    <state x="574" y="134" key="RollbackChangesDialog/0.0.1536.864@0.0.1536.864" timestamp="1615977703293" />
+    <state x="360" y="164" key="Vcs.Push.Dialog.v2" timestamp="1615977783040">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="360" y="164" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1615977783040" />
     <state x="585" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615914080650">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
