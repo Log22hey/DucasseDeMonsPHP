@@ -1,3 +1,3 @@
 <section>
-   <img src="./images/header.jpg" alt="Ducasse de Mons" class="img-fluid self-center"/>
+    <a class="navbar-brand" href="./index.php?page=admin_accueil.php"><img src="./images/header.jpg" class="d-block w-100" alt="Home"></a>
 </section>

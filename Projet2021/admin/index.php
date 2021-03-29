@@ -46,7 +46,7 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
 
                 <?php
                 if (!isset($_SESSION['page'])) {
-                    $_SESSION['page'] = "accueil.php"; // page par défaut 
+                    $_SESSION['page'] = "admin_accueil.php"; // page par défaut
                 }
                 if (isset($_GET['page'])) {
                     $_SESSION['page'] = $_GET['page'];

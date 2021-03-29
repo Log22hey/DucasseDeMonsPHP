@@ -20,6 +20,9 @@
                 <a class="nav-link" href="./index.php?page=boutique.php">La boutique <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
+                <a class="nav-link" href="./index.php?page=panier.php">Votre panier<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
                 <a class="nav-link" href="#"><span class="sr-only"></span></a>
             </li>
         </ul>

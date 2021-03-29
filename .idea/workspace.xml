@@ -28,12 +28,11 @@
     <list default="true" id="8bafd3b3-c999-4a95-88c6-a37a11241f66" name="Default Changelist" comment="commit du 16 mars 2021">
       <change afterPath="$PROJECT_DIR$/../Boulangerie/Boulangerie.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Logan2/.idea/Logan2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/connect.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/footer2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/footer3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/footer4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/footer5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet2021/admin/images/footer6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/admin/page/gestionBoutique.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/admin/page/gestionClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/admin/page/gestionCommande.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/admin/page/profil.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projet2021/page/panier.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/StandardLiègeSeptembre2020.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/misc.xml" afterDir="false" />
@@ -41,18 +40,15 @@
       <change afterPath="$PROJECT_DIR$/../StandardLiègeSeptembre2020/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../proj_garage/.idea/proj_garage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/chasse.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/images/chasse.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/feu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/inscription.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/images/invlacopou1an.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/css/2021Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/css/2021Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/admin_footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/admin_footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/admin_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/admin_menu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/Membre.class.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/classes/MembreDB.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/lib/php/public_footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/lib/php/public_footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/lib/php/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/lib/php/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/page/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/page/admin_accueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet2021/admin/page/disconnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/admin/page/disconnect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet2021/lib/php/public_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/lib/php/public_menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/page/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/connexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/page/historique.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/historique.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet2021/page/musée.php" beforeDir="false" afterPath="$PROJECT_DIR$/Projet2021/page/musée.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +82,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -101,6 +98,19 @@
       <recent name="C:\laragon\www\Projet2021\Projet2021\admin\images" />
       <recent name="C:\laragon\www\Projet2021" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -119,7 +129,9 @@
       <workItem from="1615884849481" duration="12594000" />
       <workItem from="1615911703540" duration="1513000" />
       <workItem from="1615970539309" duration="7127000" />
-      <workItem from="1616401752006" duration="9198000" />
+      <workItem from="1616401752006" duration="9482000" />
+      <workItem from="1616418160497" duration="14000" />
+      <workItem from="1617007586058" duration="3581000" />
     </task>
     <task id="LOCAL-00001" summary="2e commit">
       <created>1615816123293</created>
@@ -156,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615977775646</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit du 22 mars 2021">
+      <created>1616411159515</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616411159515</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,40 +197,7 @@
     <MESSAGE value="2e commit" />
     <MESSAGE value="commit du 16 mars 2021" />
     <MESSAGE value="commit du 17 mars" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit du 17 mars" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="523" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615374326653">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="523" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1615374326653" />
-    <state x="498" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615887905512">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="498" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1615887905512" />
-    <state x="548" y="186" key="FileChooserDialogImpl" timestamp="1615973669601">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="548" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1615973669601" />
-    <state x="506" y="154" key="NewPhpClassDialog" timestamp="1615973795972">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="506" y="154" key="NewPhpClassDialog/0.0.1536.864@0.0.1536.864" timestamp="1615973795972" />
-    <state x="603" y="355" key="NewPhpFileDialog" timestamp="1615807396533">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="603" y="355" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1615807396533" />
-    <state x="574" y="134" key="RollbackChangesDialog" timestamp="1615977703293">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="574" y="134" key="RollbackChangesDialog/0.0.1536.864@0.0.1536.864" timestamp="1615977703293" />
-    <state x="360" y="164" key="Vcs.Push.Dialog.v2" timestamp="1615977783040">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="360" y="164" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1615977783040" />
-    <state x="585" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615914080650">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="585" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1615914080650" />
+    <MESSAGE value="commit du 22 mars 2021" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit du 22 mars 2021" />
   </component>
 </project>
