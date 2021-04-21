@@ -21,26 +21,22 @@ class ProduitDB extends Produit{
         //var_dump($_data);
         return $_data;
     }
-/*
+
     public function getProduitByCat($id_cat){
-
         try{
-            $query="select * from vue_produit_categorie where id_cat = :id_cat";
-            $_resultset = $this ->_db->prepare ($query);
-            $_resultset ->bindValue(':id_cat',$id_cat);
-            $_resultset->execute();
+            $query="select * from vue_produit_categorie where id_cat=:id_cat";
+            $_resulset = $this-> _db->prepare($query);
+            $_resulset->bindValue(':id_cat',$id_cat);
+            $_resulset->execute();
 
-            while($d= $_resultset-> fetch()){
-
-                $_data[] = new Produit($d);
+            while($d = $_resulset->fetch()){
+                $_data[] = new produit($d);
             }
+             //var_dump($_data);
 
             return $_data;
-
         }catch(PDOException $e){
-            print "Echec de la requete".$e->getMessage();
-
+            print "Echec de la requête ".$e->getMessage();
         }
     }
-*/
 }

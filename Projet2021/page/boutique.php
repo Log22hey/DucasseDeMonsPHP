@@ -19,12 +19,13 @@ $nbr = count($liste);
                 ?>
                 <div class="col">
                     <div class="card shadow-sm">
-                        <img src="./admin/images/<?php print $liste[$i]->photo; ?>" alt="Image"/>
+                        <img src="./admin/images/<?php print $liste[$i]->photo; ?>" alt="Image" height="310" width="310"/>
                         <div class="card-body">
                             <p class="card-text">
-                                <?php
-                                print  $liste[$i]->description;
-                                ?>
+                                <p><?php print  $liste[$i]->description; ?></p>
+                                <p><?php print  $liste[$i]->prix; ?> EUR</p>
+
+
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Commander</button>

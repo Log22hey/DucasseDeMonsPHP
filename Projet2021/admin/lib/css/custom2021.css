@@ -1,3 +1,9 @@
 .dropdown-menu a{
     color:red;
 }
+
+.card {
+    margin: 1em;
+    border:none;
+    text-align: center;
+}

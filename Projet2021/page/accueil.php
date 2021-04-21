@@ -1,8 +1,4 @@
-<div class="accueil">
-Bienvenue dans la partie public
-</div>
-<br><br>
-
+<br>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -41,4 +37,29 @@ Bienvenue dans la partie public
         <span class="sr-only">Next</span>
     </a>
 </div>
+
+<br><br>
+<?php
+$cat = new CategorieDB($cnx);
+$liste_cat = $cat->getCategorie();
+$nbr_cat = count($liste_cat);
+?>
+
+<div class="card-group">
+    <?php
+    for ($i = 0;$i < $nbr_cat;$i++)
+    {
+        ?>
+        <div class="card">
+            <img src="./admin/images/<?php print $liste_cat[$i]->image; ?>" class="card-img-top" alt="Doudou" height="300" width="300">
+            <div class="card-body">
+                <a class="lien" href="index.php?page=boutique.php&id_cat=<?php print $liste_cat[$i]->id_cat;?>">
+                    <?php print $liste_cat[$i]->nom_cat; ?>
+                </a>
+                </h5>
+            </div>
+        </div>
+        <?php
+    }
+    ?>
 <br><br>
