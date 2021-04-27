@@ -18,7 +18,7 @@ $nbr = count($liste);
             for ($i = 0; $i < $nbr; $i++) {
                 ?>
                 <div class="col">
-                    <div class="card shadow-sm">
+                    <div class="card">
                         <img src="./admin/images/<?php print $liste[$i]->photo; ?>" alt="Image" height="310" width="310"/>
                         <div class="card-body">
                             <p class="card-text">

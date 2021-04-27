@@ -39,4 +39,41 @@ class ProduitDB extends Produit{
             print "Echec de la requête ".$e->getMessage();
         }
     }
+
+    public function updateProduit($champ,$id,$valeur){
+        try{
+            //appeler une proccedure emnbarquée
+            $query = "update produit set ".$champ."='".$valeur."' where id_produit='".$id."'";
+            $resulset= $this->_db->prepare($query);//transformer la requete
+            $resulset->execute();
+        }catch(PDOException $e)
+        {
+            print $e->getMessage();
+        }
+    }
+
+    public function getProduitByRef($ref){
+        try {
+            $this->_db->beginTransaction();
+            $query = "select * from produit where reference = :ref";
+            $resultset = $this->_db->prepare($query);
+            $resultset->bindValue(':ref', $ref);
+            $resultset->execute();
+            $data = $resultset->fetch();
+            return $data;
+
+            $this->_db->commit();
+        } catch(PDOException $e){
+            print "Echec de la requête : ".$e->getMessage();
+            $_db->rollback();
+        }
+    }
+
+    public function mise_a_jour($id){
+
+    }
+
+    public function ajout_produit(){
+
+    }
 }

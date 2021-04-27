@@ -10,6 +10,12 @@
     font-weight: bold;
 }
 
+.carousel-caption{
+    color: goldenrod;
+    font-size: 120%;
+    background-color: gainsboro;
+}
+
 .lien{
     color:goldenrod;
     font-size: 120%;

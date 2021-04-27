@@ -17,7 +17,7 @@ if(isset($_GET['submit_login'])) {
 }
 ?>
 
-<form class="ecartTop3pc" action="<?php print $_SERVER['PHP_SELF']; ?>" method="get">
+<form action="<?php print $_SERVER['PHP_SELF']; ?>" method="get">
     <div class="form-group row">
         <label for="colFormLabelSm" class="col-sm-2 col-form-label txtGras text-right col-form-label-md offset-3">Nom </label>
         <div class="col-sm-3 ">
