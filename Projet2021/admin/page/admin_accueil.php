@@ -1,4 +1,3 @@
-
 <h2>Accueil admin</h2>
 
 <div class="card-body bg-dark">

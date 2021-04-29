@@ -11,7 +11,7 @@ $nbr = count($liste);
 //var_dump($liste);
 //print"images ".$liste[0]->photo;
 ?>
-<div class="album py-5 bg-light">
+
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <?php
@@ -19,11 +19,13 @@ $nbr = count($liste);
                 ?>
                 <div class="col">
                     <div class="card">
-                        <img src="./admin/images/<?php print $liste[$i]->photo; ?>" alt="Image" height="310" width="310"/>
+                        <img src="./admin/images/<?php print $liste[$i]->photo; ?>" alt="Image"/>
                         <div class="card-body">
                             <p class="card-text">
+                                <p><?php print  $liste[$i]->nom_produit; ?></p>
                                 <p><?php print  $liste[$i]->description; ?></p>
                                 <p><?php print  $liste[$i]->prix; ?> EUR</p>
+                                <p><?php print  $liste[$i]->stock; ?> en stock</p>
 
 
                             <div class="d-flex justify-content-between align-items-center">
@@ -40,4 +42,3 @@ $nbr = count($liste);
             ?>
         </div>
     </div>
-</div>

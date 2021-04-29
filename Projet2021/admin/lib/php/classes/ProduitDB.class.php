@@ -24,7 +24,7 @@ class ProduitDB extends Produit{
 
     public function getProduitByCat($id_cat){
         try{
-            $query="select * from vue_produit_categorie where id_cat=:id_cat";
+            $query="select * from produit where id_cat=:id_cat";
             $_resulset = $this-> _db->prepare($query);
             $_resulset->bindValue(':id_cat',$id_cat);
             $_resulset->execute();
