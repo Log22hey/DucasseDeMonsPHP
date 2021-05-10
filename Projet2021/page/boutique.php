@@ -3,7 +3,6 @@ $prod = new ProduitDB($cnx);
 if (isset($_GET['id_cat'])) {
     $liste = $prod->getProduitByCat($_GET['id_cat']);
 } else {
-
     $liste = $prod->getAllProduit();
 }
 
@@ -27,10 +26,9 @@ $nbr = count($liste);
                                 <p><?php print  $liste[$i]->prix; ?> EUR</p>
                                 <p><?php print  $liste[$i]->stock; ?> en stock</p>
 
-
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Commander</button>
+                                    <button type="button" class="btn btn-sm btn-danger">Commander</button>
 
                                 </div>
                             </div>
