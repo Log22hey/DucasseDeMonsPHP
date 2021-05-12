@@ -47,3 +47,4 @@ $nbr=count($liste);
     ?>
     </tbody>
 </table>
+<br>

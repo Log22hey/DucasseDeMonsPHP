@@ -11,4 +11,3 @@ $produit = new ProduitDB($cnx);
 
 extract($_GET,EXTR_OVERWRITE);
 $pr[] = $produit->updateProduit($champ,$id,$nouveau);
-

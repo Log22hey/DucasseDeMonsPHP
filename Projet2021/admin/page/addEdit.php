@@ -1,21 +1,32 @@
-<?php include('lib/php/verifier_connexion.php'); ?>
+<?php include ('lib/php/verifier_connexion.php'); ?>
 
 <h2>Editer / ajouter un produit</h2>
-
 <?php
 $produit = new ProduitDB($cnx);
-if(isset($_GET['editer'])){
-    ?><pre><?php
-    var_dump($_GET);
-    ?></pre><?php
+if(isset($_GET['editer_ajouter'])){
     extract($_GET,EXTR_OVERWRITE);
-    $prod = $produit->mise_a_jour($id_produit);
-}
-if(isset($_GET['inserer'])){
-    $prod = $produit->ajout_produit(); //ajouter les arguments vérifiés
+    if($_GET['action']=="editer"){
+        ?><pre><?php     //var_dump($_GET);     ?></pre><?php
+        if(!empty($reference) && !empty($nom_produit) && !empty($description) && !empty($prix) && !empty($stock) ){
+            $photo = 'lance.jpeg';
+            $id_cat = 1;
+            $produit->mise_a_jourProduit($id_produit,$nom_produit,$photo,$prix,$stock, $description,$id_cat,$reference);
+        }
+    } else if($_GET['action'] == "inserer") {
+        ?><pre><?php     //var_dump($_GET);     ?></pre><?php
+
+        if(!empty($reference) && !empty($nom_produit) && !empty($description) && !empty($prix) && !empty($stock) ){
+            print "ici";
+            $photo = 'lance.jpeg';
+            $id_cat = 1;
+            $retour=$produit->ajout_produit($nom_produit,$photo,$prix,$stock,$description,$id_cat,$reference);
+            print "retour : ".$retour;
+        }
+    }
 }
 ?>
-<form class="row g-3">
+
+<form class="row g-3" method="get" action="<?php print $_SERVER['PHP_SELF'];?>" id="formEditAjout">
     <div class="col-md-2">
         <label for="reference" class="form-label">Référence</label>
         <input type="text" class="form-control" id="reference" name="reference">
@@ -34,11 +45,12 @@ if(isset($_GET['inserer'])){
     </div>
     <div class="col-md-2">
         <label for="stock" class="form-label">Stock</label>
-        <input type="number" class="form-control" id="stock" name="stock">
+        <input type="number" class="form-control" id="stock"  name="stock">
     </div>
     <div class="col-12">
         <input type="hidden" name="id_produit" id="id_produit">
-        <button type="submit" class="btn btn-danger" id="editer" name="editer">Mettre à jour</button>
-        <button type="submit" class="btn btn-danger" id="inserer" name="inserer">Enregistrer</button>
+        <input type="hidden" name="action" id="action" > <br><br>
+        <button type="submit" class="btn btn-dark" id="editer_ajouter" name="editer_ajouter">Nouveau ou mettre à jour</button>
     </div>
 </form>
+<br><br>

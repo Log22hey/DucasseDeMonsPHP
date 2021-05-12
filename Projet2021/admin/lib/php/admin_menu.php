@@ -9,7 +9,7 @@
                 <a class="nav-link" href="./index.php?page=gestionClient.php">Gestion des clients <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="./index.php?page=gestionCommande.php">Gestion des produits<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="./index.php?page=gestionProduit.php">Gestion des produits<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="./index.php?page=addEdit.php">Ajouter / editer<span class="sr-only">(current)</span></a>
