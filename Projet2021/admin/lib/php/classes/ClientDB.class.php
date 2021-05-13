@@ -9,6 +9,18 @@ class ClientDB extends Client {
         $this->_db = $cnx;
     }
 
+    public function getAllClient(){
+        $query = "select * from client";
+        $_resultset = $this->_db->prepare($query);
+        $_resultset->execute();
+
+        while( $d = $_resultset->fetch()){
+            $_data[] = new Produit($d);
+        }
+        //var_dump($_data);
+        return $_data;
+    }
+
     public function getClient($email, $password) {
         $query = "select * from client where email=:email and password=:password";
         try {
@@ -46,6 +58,35 @@ class ClientDB extends Client {
 
         } catch (PDOException $e) {
             print "<br/>Echec de l'insertion";
+            print $e->getMessage();
+        }
+    }
+
+    public function updateClient($champ,$id,$valeur){
+        try{
+            $query = "update produit set ".$champ."='".$valeur."' where id_produit='".$id."'";
+            $resulset= $this->_db->prepare($query);
+            $resulset->execute();
+        }catch(PDOException $e)
+        {
+            print $e->getMessage();
+        }
+    }
+
+    public function mise_a_jourClient($id_client,$nom,$email,$password,$adresse,$numero,$localite,$cp){
+        try{
+            $query = "update client set nom=:nom,email=:email,password=:password,adresse=:adresse,numero=:numero,localite=:localite,cp=:cp where id_client=:id";
+            $_resultset = $this->_db->prepare($query);
+            $_resultset->bindValue(':id_client', $id_client);
+            $_resultset->bindValue(':nom', $nom);
+            $_resultset->bindValue(':email', $email);
+            $_resultset->bindValue(':password', $password);
+            $_resultset->bindValue(':$adresse', $adresse);
+            $_resultset->bindValue(':numero', $numero);
+            $_resultset->bindValue(':localite', $localite);
+            $_resultset->bindValue(':cp', $cp);
+            $_resultset->execute();
+        }catch(PDOException $e){
             print $e->getMessage();
         }
     }

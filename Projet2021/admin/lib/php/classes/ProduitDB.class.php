@@ -22,11 +22,11 @@ class ProduitDB extends Produit{
         return $_data;
     }
 
-    public function getProduitsByCat($id_theme){
+    public function getProduitByCat($id_cat){
         try{
-            $query="select * from vue_produit_theme where id_theme=:id_theme";
+            $query="select * from produit where id_cat=:id_cat";
             $_resulset = $this-> _db->prepare($query);
-            $_resulset->bindValue(':id_theme',$id_theme);
+            $_resulset->bindValue(':id_cat',$id_cat);
             $_resulset->execute();
 
             while($d = $_resulset->fetch()){
@@ -41,9 +41,8 @@ class ProduitDB extends Produit{
 
     public function updateProduit($champ,$id,$valeur){
         try{
-            //appeler une proccedure emnbarquée
-            $query = "update bp_produit set ".$champ."='".$valeur."' where id_produit='".$id."'";
-            $resulset= $this->_db->prepare($query);//transformer la requete
+            $query = "update produit set ".$champ."='".$valeur."' where id_produit='".$id."'";
+            $resulset= $this->_db->prepare($query);
             $resulset->execute();
         }catch(PDOException $e)
         {
@@ -54,7 +53,7 @@ class ProduitDB extends Produit{
     public function getProduitByRef($ref){
         try {
             $this->_db->beginTransaction();
-            $query = "select * from bp_produit where reference = :ref";
+            $query = "select * from produit where reference = :ref";
             $resultset = $this->_db->prepare($query);
             $resultset->bindValue(':ref', $ref);
             $resultset->execute();
@@ -70,8 +69,8 @@ class ProduitDB extends Produit{
 
     public function mise_a_jourProduit($id_produit,$nom_produit,$photo,$prix,$stock,$description,$id_cat,$reference){
         try{
-            $query="update bp_produit set nom_produit=:nom_produit,photo=:photo,prix=:prix,stock=:stock,";
-            $query.="description=:description,id_type=:id_type,id_cat=:id_cat,reference=:reference where id_produit=:id_produit";
+            $query="update produit set nom_produit=:nom_produit,photo=:photo,prix=:prix,stock=:stock,";
+            $query.="description=:description,id_cat=:id_cat,reference=:reference where id_produit=:id_produit";
             $_resultset = $this->_db->prepare($query);
             $_resultset->bindValue(':id_produit', $id_produit);
             $_resultset->bindValue(':nom_produit', $nom_produit);
@@ -89,8 +88,8 @@ class ProduitDB extends Produit{
 
     public function ajout_produit($nom_produit,$photo,$prix,$stock,$description,$id_cat,$reference){
         try{
-            $query="insert into bp_produit (nom_produit,photo,prix,stock,description,id_cat,reference) values ";
-            $query.="(:nom_produit,:photo,:prix,:stock,:description,:id_type,:id_cat,:reference)";
+            $query="insert into produit (nom_produit,photo,prix,stock,description,id_cat,reference) values ";
+            $query.="(:nom_produit,:photo,:prix,:stock,:description,:id_cat,:reference)";
             $_resultset = $this->_db->prepare($query);
             $_resultset->bindValue(':nom_produit', $nom_produit);
             $_resultset->bindValue(':photo', $photo);
