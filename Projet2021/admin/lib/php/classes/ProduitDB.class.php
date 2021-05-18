@@ -103,4 +103,21 @@ class ProduitDB extends Produit{
             print $e->getMessage();
         }
     }
+
+    public function getProduitById($id_produce){
+        try{
+            $query="select * from produit where id_produit=:id_produce";
+            $_resulset = $this-> _db->prepare($query);
+            $_resulset->bindValue(':id_produce',$id_produce);
+            $_resulset->execute();
+
+            while($d = $_resulset->fetch()){
+                $_data[] = new produit($d);
+            }
+            // var_dump($_data);
+            return $_data;
+        }catch(PDOException $e){
+            print "Echec de la requête ".$e->getMessage();
+        }
+    }
 }

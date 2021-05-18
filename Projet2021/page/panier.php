@@ -1,113 +1,129 @@
 <?php
-include_once("fonctions-panier.php");
+if (isset($_SESSION['panier'])) {//si le panier a un produit au minimum
 
-$erreur = false;
+    if (isset($_GET['viderPanier'])) { //si on clique sur vider le panier
+        $_SESSION['panier'] = null;  //le panier sera null
 
-$action = (isset($_POST['action'])? $_POST['action']:  (isset($_GET['action'])? $_GET['action']:null )) ;
-if($action !== null)
-{
-    if(!in_array($action,array('ajout', 'suppression', 'refresh')))
-        $erreur=true;
-
-    //récuperation des variables en POST ou GET
-    $l = (isset($_POST['l'])? $_POST['l']:  (isset($_GET['l'])? $_GET['l']:null )) ;
-    $p = (isset($_POST['p'])? $_POST['p']:  (isset($_GET['p'])? $_GET['p']:null )) ;
-    $q = (isset($_POST['q'])? $_POST['q']:  (isset($_GET['q'])? $_GET['q']:null )) ;
-
-    //Suppression des espaces verticaux
-    $l = preg_replace('#\v#', '',$l);
-    //On verifie que $p soit un float
-    $p = floatval($p);
-
-    //On traite $q qui peut etre un entier simple ou un tableau d'entier
-
-    if (is_array($q)){
-        $QteArticle = array();
-        $i=0;
-        foreach ($q as $contenu){
-            $QteArticle[$i++] = intval($contenu);
-        }
+        print "<meta http-equiv=\"refresh\": Content=\"0;URL=./index.php\">";  //rafraichissement de la page
+        $_SESSION['page'] = "panier.php";
     }
-    else
-        $q = intval($q);
+    ?>
+    <h4> Votre panier</h4>
+    <div class="position">
+        <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="get">
+            <button class="btn btn-danger" type="submit" id="viderPanier" name="viderPanier">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash"
+                     viewBox="0 0 16 16">
+                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                    <path fill-rule="evenodd"
+                          d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                </svg>
+                Vider mon panier
+            </button>
+        </form>
+    </div>
 
-}
+    <?php
+    $panier = $_SESSION['panier'];//session contenant les données du panier du client
+    $liste = $panier;
+    $nbr = count($liste);
 
-if (!$erreur){
-    switch($action){
-        Case "ajout":
-            ajouterArticle($l,$q,$p);
-            break;
+    $id = new ProduitDB($cnx);
+    ?>
+    <div class="container d-flex">
+        <table>
+            <?php for ($i = 0;$i < $nbr;$i++) {
+            $id_p = $liste[$i]['id_produit'];
+            $_SESSION['id_produce'] = $id_p; //session contenant les id des produits du panier
 
-        Case "suppression":
-            supprimerArticle($l);
-            break;
+            $prod = $id->getProduitbyId($_SESSION['id_produce']);  //recuperation de l'id du produit pour afficher ses informations
+            $nbr2 = count($prod);
+            ?>
+            <tr>
+                <td>
+                    <div style="text-align: center;"/>
+                    <img src="./admin/images/<?php print $liste[$i]['photo']; ?>" alt="Image" width="40%"/>
+                </td>
+                <td>
+                    <?php
+                    for ($j = 0; $j < $nbr2; $j++) { ?>
+                        <?php print $prod[$j]->nom_produit;
+                        ?>
+                        <?php
+                    }
+                    ?>
+                </td>
+                <td>
+                    <?php print $liste[$i]['prix'];
+                    print"€";
+                    $id_pro[] = $liste[$i]['prix'];
+                    ?>
+                </td>
 
-        Case "refresh" :
-            for ($i = 0 ; $i < count($QteArticle) ; $i++)
-            {
-                modifierQTeArticle($_SESSION['panier']['libelleProduit'][$i],round($QteArticle[$i]));
-            }
-            break;
+                <?php
+                $stringArra = $id_pro;
+                $FloatArray = array_map(//convertion du tableau array string en float
+                    function ($id_pro) {
+                        return (float)$id_pro;
+                    },
+                    $stringArra
+                );
 
-        Default:
-            break;
-    }
-}
-
-echo '<?xml version="1.0" encoding="utf-8"?>';?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
-<head>
-    <title>Votre panier</title>
-</head>
-<body>
-
-<form method="post" action="panier.php">
-    <table style="width: 400px">
-        <tr>
-            <td colspan="4">Votre panier</td>
-        </tr>
-        <tr>
-            <td>Libellé</td>
-            <td>Quantité</td>
-            <td>Prix Unitaire</td>
-            <td>Action</td>
-        </tr>
-
-
-        <?php
-        if (creationPanier())
-        {
-            $nbArticles=count($_SESSION['panier']['libelleProduit']);
-            if ($nbArticles <= 0)
-                echo "<tr><td>Votre panier est vide </ td></tr>";
-            else
-            {
-                for ($i=0 ;$i < $nbArticles ; $i++)
-                {
-                    echo "<tr>";
-                    echo "<td>".htmlspecialchars($_SESSION['panier']['libelleProduit'][$i])."</ td>";
-                    echo "<td><input type=\"text\" size=\"4\" name=\"q[]\" value=\"".htmlspecialchars($_SESSION['panier']['qteProduit'][$i])."\"/></td>";
-                    echo "<td>".htmlspecialchars($_SESSION['panier']['prixProduit'][$i]) . " €</td>";
-                    echo "<td><a href=\"".htmlspecialchars("panier.php?action=suppression&l=".rawurlencode($_SESSION['panier']['libelleProduit'][$i]))."\">XX</a></td>";
-                    echo "</tr>";
+                $total = array_sum($FloatArray); //SOMME des prix des produits pour faire le total
+                ?>
+                <?php
                 }
+                ?>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" fill="currentColor"
+                         class="bi bi-truck" viewBox="0 0 16 16">
+                        <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    </svg>
+                    Livraison gratuite
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center;">
+                    <div class="total">
+                        Sous-total:
+                        <?php
+                        echo $total;
+                        print " €"
+                        ?>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
 
-                echo "<tr><td colspan=\"2\"> </td>";
-                echo "<td colspan=\"2\">";
-                echo "Total : ".MontantGlobal();
-                echo "€</td></tr>";
+    <?php
 
-                echo "<tr><td colspan=\"4\">";
-                echo "<input type=\"submit\" value=\"Rafraichir\"/>";
-                echo "<input type=\"hidden\" name=\"action\" value=\"refresh\"/>";
-
-                echo "</td></tr>";
-            }
-        }
+    if (!isset($_SESSION['Connexion'])) {//on regarde le statut de connection de l'utilisateur
         ?>
-    </table>
-</form>
-</body>
-</html>
+        <div class="connection">
+            <h5> enregistrer le bon de commande PDF</h5>
+                <a href="index.php?page=connexion.php" title="connexion">
+                    <img src="./admin/images/ici.jpg" width="200px">
+                </a>
+            </button>
+        </div>
+        <?php
+    }
+} else {// si le panier est vide
+    ?>
+    <h4>Votre panier est vide</h4>
+    <div class="vide">
+        <a href="index.php?page=boutique.php" title="Ajouter des articles">
+            <img src="./admin/images/ici.jpg" width="200px">
+        </a>
+    </div>
+    <?php
+}
+?>
