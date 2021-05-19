@@ -1,45 +1,61 @@
 $(document).ready(function () {
-    //code pour le tableau editable
-    $("span[id]").click(function () {
-        //Récupération du contenu d'origine de la zone cliquée
-        var valeur1 = $.trim($(this).text());
+    $('#editer_ajouter').text('Mettre à jour ou Nouveau produit');
 
-        //s'il fallait tester si on utilise edge :
-        if (/Edge\/\d./i.test(navigator.userAgent)) {
-            $(this).addClass("borderInput");
+    $('#reference').blur(function(){
+        var ref = $(this).val();
+        if(ref != ''){
+            var parametre="ref="+ref;
+            $.ajax({
+                type: 'GET',
+                data: parametre,
+                dataType: 'json',
+                url: './lib/php/ajax/ajaxRechercheProduit.php',
+                success: function(data){
+                    console.log(data);
+                    $('#denomination').val(data[0].nom_produit);
+                    if($('#denomination').val()!='') {
+                        $('#editer_ajouter').text('Mettre à jour');
+                        $('#action').attr('value','editer');
+                        $('#id_produit').attr('value',data[0].id_produit);
+                    } else {
+                        $('#editer_ajouter').text('Insérer');
+                        $('#action').attr('value','inserer');
+                    }
+                    $('#description').val(data[0].description);
+                    $('#prix').val(data[0].prix);
+                    $('#stock').val(data[0].stock);
+                }
+            });
+            $('#reference').click(function(){
+                $('#reference').val('');
+                $('#denomination').val('');
+            })
         }
+    });
 
-        //récupération, pour la zone cliquée, des attributs id et name, pour les envoyer à la requête sql
+    $('#recup').blur(function(){
+        var recup = $(this).val();
+        alert(recup);
+    });
+
+    $('span[id]').click(function(){
+        var valeur1 = $.trim($(this).text());
         var ident = $(this).attr("id");
         var name = $(this).attr("name");
-
-        $(this).blur(function () {
-            $(this).removeClass("borderInput");
-            //récupération de la nouveau contenu du champ qui vient de perdre le focus (blur)
-            var valeur2 = $(this).text();
-            valeur2 = $.trim(valeur2);
-
-            if (valeur1 != valeur2) // Si on a fait un changement
-            {
-                //adjonction des paramètres qui accompagnent le nom du fichier appelé
-                var parametre = 'champ=' + name + '&id=' + ident + '&nouveau=' + valeur2;
-                //alert(parametre);
-                var retour = $.ajax({
+        $(this).blur(function(){
+            var valeur2 = $.trim($(this).text());
+            if(valeur1 != valeur2){
+                var parametre = 'champ='+name+'&id='+ident+'&nouveau='+valeur2;
+                $.ajax({
                     type: 'GET',
                     data: parametre,
-                    dataType: "text",
-                    url: "./lib/php/ajax/ajaxUpdateProduit.php",
-                    success: function (data) {
-                        console.log("success");
+                    dataType: 'text',
+                    url: './lib/php/ajax/ajaxUpdateClient.php',
+                    success: function(data){
+                        console.log(data);
                     }
                 });
-                retour.fail(function (jqXHR, textStatus, errorThrown) {
-                    console.log(jqXHR);
-                    console.log(textStatus);
-                    console.log(errorThrown);
-                });
             }
-            ;
         });
     });
 });

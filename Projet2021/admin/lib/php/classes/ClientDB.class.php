@@ -80,23 +80,15 @@ class ClientDB extends Client {
         }
     }
 
-    public function modifClient($data,$id) {
-        try {
-            $query = "update client set nom=:nom,email=:email,password=:password,adresse=:adresse,numero=:numero,localite=:localite,cp=;cp where id_client=:id ";
-            $resultset = $this->_db->prepare($query);
-            $resultset->bindValue(':nom', $data['nom'], PDO::PARAM_STR);
-            $resultset->bindValue(':email', $data['email'], PDO::PARAM_STR);
-            $resultset->bindValue(':password', $data['password'], PDO::PARAM_STR);
-            $resultset->bindValue(':adresse', $data['adresse'], PDO::PARAM_STR);
-            $resultset->bindValue(':numero', $data['numero'], PDO::PARAM_STR);
-            $resultset->bindValue(':localite', $data['localite'], PDO::PARAM_STR);
-            $resultset->bindValue(':cp', $data['cp'], PDO::PARAM_STR);
-            $resultset->bindValue(':id', $id);
-            $resultset->execute();
-            return 1;
-        } catch (PDOException $e) {
+    public function updateCLient($champ,$id,$valeur){
+        try{
+            //appeler une proccedure emnbarquée
+            $query = "update client set ".$champ."='".$valeur."' where id_client='".$id."'";
+            $resulset= $this->_db->prepare($query);
+            $resulset->execute();
+        }catch(PDOException $e)
+        {
             print $e->getMessage();
-            return 0;
         }
     }
 }
