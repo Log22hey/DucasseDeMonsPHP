@@ -11,10 +11,6 @@
             <li class="nav-item active">
                 <a class="nav-link" href="./index.php?page=gestionProduit.php">Gestion des produits<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="./index.php?page=addEdit.php">Ajouter / editer<span class="sr-only">(current)</span></a>
-            </li>
-
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="./index.php?page=disconnect.php"><img src="./images/login.png" class="d-block w-100" alt="Home"></a></li>

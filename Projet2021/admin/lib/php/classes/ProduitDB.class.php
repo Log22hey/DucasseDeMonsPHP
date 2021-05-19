@@ -50,60 +50,6 @@ class ProduitDB extends Produit{
         }
     }
 
-    public function getProduitByRef($ref){
-        try {
-            $this->_db->beginTransaction();
-            $query = "select * from produit where reference = :ref";
-            $resultset = $this->_db->prepare($query);
-            $resultset->bindValue(':ref', $ref);
-            $resultset->execute();
-            $data = $resultset->fetch();
-            return $data;
-
-            $this->_db->commit();
-        } catch(PDOException $e){
-            print "Echec de la requête : ".$e->getMessage();
-            $_db->rollback();
-        }
-    }
-
-    public function mise_a_jourProduit($id_produit,$nom_produit,$photo,$prix,$stock,$description,$id_cat,$reference){
-        try{
-            $query="update produit set nom_produit=:nom_produit,photo=:photo,prix=:prix,stock=:stock,";
-            $query.="description=:description,id_cat=:id_cat,reference=:reference where id_produit=:id_produit";
-            $_resultset = $this->_db->prepare($query);
-            $_resultset->bindValue(':id_produit', $id_produit);
-            $_resultset->bindValue(':nom_produit', $nom_produit);
-            $_resultset->bindValue(':photo', $photo);
-            $_resultset->bindValue(':prix', $prix);
-            $_resultset->bindValue(':stock', $stock);
-            $_resultset->bindValue(':description', $description);
-            $_resultset->bindValue(':id_cat', $id_cat);
-            $_resultset->bindValue(':reference', $reference);
-            $_resultset->execute();
-        }catch(PDOException $e){
-            print $e->getMessage();
-        }
-    }
-
-    public function ajout_produit($nom_produit,$photo,$prix,$stock,$description,$id_cat,$reference){
-        try{
-            $query="insert into produit (nom_produit,photo,prix,stock,description,id_cat,reference) values ";
-            $query.="(:nom_produit,:photo,:prix,:stock,:description,:id_cat,:reference)";
-            $_resultset = $this->_db->prepare($query);
-            $_resultset->bindValue(':nom_produit', $nom_produit);
-            $_resultset->bindValue(':photo', $photo);
-            $_resultset->bindValue(':prix', $prix);
-            $_resultset->bindValue(':stock', $stock);
-            $_resultset->bindValue(':description', $description);
-            $_resultset->bindValue(':id_cat', $id_cat);
-            $_resultset->bindValue(':reference', $reference);
-            $_resultset->execute();
-        }catch(PDOException $e){
-            print $e->getMessage();
-        }
-    }
-
     public function getProduitById($id_produce){
         try{
             $query="select * from produit where id_produit=:id_produce";

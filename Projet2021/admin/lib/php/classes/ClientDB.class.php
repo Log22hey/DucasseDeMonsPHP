@@ -21,7 +21,7 @@ class ClientDB extends Client {
         return $_data;
     }
 
-    public function getClient($email, $password) {
+    public function getClient($email,$password) {
         $query = "select * from client where email=:email and password=:password";
         try {
             $resultset = $this->_db->prepare($query);
@@ -36,6 +36,24 @@ class ClientDB extends Client {
         }
         if (!empty($_array)) {
             return $_array;
+        } else {
+            return null;
+        }
+    }
+
+    public function getClientById($id) {
+        try {
+            $query = "select * from client where id_client=:id";
+            $resultset = $this->_db->prepare($query);
+            $resultset->bindValue(':id', $id);
+            $resultset->execute();
+
+            $data = $resultset->fetch();
+        } catch (PDOException $e) {
+            print $e->getMessage();
+        }
+        if (!empty($data)) {
+            return $data;
         } else {
             return null;
         }
@@ -62,32 +80,23 @@ class ClientDB extends Client {
         }
     }
 
-    public function updateClient($champ,$id,$valeur){
-        try{
-            $query = "update produit set ".$champ."='".$valeur."' where id_produit='".$id."'";
-            $resulset= $this->_db->prepare($query);
-            $resulset->execute();
-        }catch(PDOException $e)
-        {
+    public function modifClient($data,$id) {
+        try {
+            $query = "update client set nom=:nom,email=:email,password=:password,adresse=:adresse,numero=:numero,localite=:localite,cp=;cp where id_client=:id ";
+            $resultset = $this->_db->prepare($query);
+            $resultset->bindValue(':nom', $data['nom'], PDO::PARAM_STR);
+            $resultset->bindValue(':email', $data['email'], PDO::PARAM_STR);
+            $resultset->bindValue(':password', $data['password'], PDO::PARAM_STR);
+            $resultset->bindValue(':adresse', $data['adresse'], PDO::PARAM_STR);
+            $resultset->bindValue(':numero', $data['numero'], PDO::PARAM_STR);
+            $resultset->bindValue(':localite', $data['localite'], PDO::PARAM_STR);
+            $resultset->bindValue(':cp', $data['cp'], PDO::PARAM_STR);
+            $resultset->bindValue(':id', $id);
+            $resultset->execute();
+            return 1;
+        } catch (PDOException $e) {
             print $e->getMessage();
-        }
-    }
-
-    public function mise_a_jourClient($id_client,$nom,$email,$password,$adresse,$numero,$localite,$cp){
-        try{
-            $query = "update client set nom=:nom,email=:email,password=:password,adresse=:adresse,numero=:numero,localite=:localite,cp=:cp where id_client=:id";
-            $_resultset = $this->_db->prepare($query);
-            $_resultset->bindValue(':id_client', $id_client);
-            $_resultset->bindValue(':nom', $nom);
-            $_resultset->bindValue(':email', $email);
-            $_resultset->bindValue(':password', $password);
-            $_resultset->bindValue(':$adresse', $adresse);
-            $_resultset->bindValue(':numero', $numero);
-            $_resultset->bindValue(':localite', $localite);
-            $_resultset->bindValue(':cp', $cp);
-            $_resultset->execute();
-        }catch(PDOException $e){
-            print $e->getMessage();
+            return 0;
         }
     }
 }

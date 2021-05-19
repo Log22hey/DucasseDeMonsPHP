@@ -1,15 +1,16 @@
 <?php
 
-class Connexion {
+class Connexion
+{
     private static $_instance = null;
-    
-    public static function getInstance($dsn,$user,$pass){
-        if(!self::$_instance){
-            try{
-                self::$_instance = new PDO($dsn,$user,$pass);
-           
-            }catch(PDOException $e){
-                print $e->getMessage();
+
+    public static function getInstance($dsn, $user, $password)
+    {
+        if (!self::$_instance) {
+            try {
+                self::$_instance = new PDO($dsn, $user, $password);
+            } catch (PDOException $e) {
+                print "Echec  : " . $e->getMessage();
             }
         }
         return self::$_instance;

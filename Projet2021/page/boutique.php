@@ -68,4 +68,5 @@ if (isset($_GET['action'])) {
             }
             ?>
         </div>
+        <a href="./page/print_boutique.php">Télécharger la boutique</a>
     </div>

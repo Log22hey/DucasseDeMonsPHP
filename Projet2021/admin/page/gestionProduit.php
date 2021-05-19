@@ -11,6 +11,8 @@ $nbr=count($liste);
         <th scope="col">Nom</th>
         <th scope="col">Description</th>
         <th scope="col">Prix</th>
+        <th scope="col">Stock</th>
+        <th scope="col">Reference</th>
     </tr>
     </thead>
     <tbody>
@@ -39,6 +41,11 @@ $nbr=count($liste);
             <td>
             <span contenteditable="true" name="stock" id="<?php print $liste[$i]->id_produit;?>">
             <?php print $liste[$i]->stock;?>
+            </span>
+            </td>
+            <td>
+            <span contenteditable="true" name="reference" id="<?php print $liste[$i]->id_produit;?>">
+            <?php print $liste[$i]->reference;?>
             </span>
             </td>
         </tr>
