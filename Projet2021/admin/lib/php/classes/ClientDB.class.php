@@ -15,7 +15,7 @@ class ClientDB extends Client {
         $_resultset->execute();
 
         while( $d = $_resultset->fetch()){
-            $_data[] = new Produit($d);
+            $_data[] = new Client($d);
         }
         //var_dump($_data);
         return $_data;
