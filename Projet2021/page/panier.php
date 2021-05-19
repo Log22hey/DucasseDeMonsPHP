@@ -8,6 +8,7 @@ if (isset($_SESSION['panier'])) {//si le panier a un produit au minimum
         $_SESSION['page'] = "panier.php";
     }
     ?>
+
     <h4> Votre panier</h4>
     <div class="position">
         <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="get">
@@ -19,7 +20,7 @@ if (isset($_SESSION['panier'])) {//si le panier a un produit au minimum
                           d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
                 </svg>
                 Vider mon panier
-            </button>
+            </button><br><br>
         </form>
     </div>
 
@@ -74,14 +75,14 @@ if (isset($_SESSION['panier'])) {//si le panier a un produit au minimum
                 <?php
                 }
                 ?>
-            </tr>
+            </tr><br><br>
             <tr>
                 <td colspan="3" style="text-align: center;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" fill="currentColor"
                          class="bi bi-truck" viewBox="0 0 16 16">
                         <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
                     </svg>
-                    Livraison gratuite
+                    Livraison sous 3-6 jours ouvrables
                 </td>
             </tr>
             <tr>
@@ -92,7 +93,7 @@ if (isset($_SESSION['panier'])) {//si le panier a un produit au minimum
             <tr>
                 <td colspan="3" style="text-align: center;">
                     <div class="total">
-                        Sous-total:
+                        Total:
                         <?php
                         echo $total;
                         print " €"
@@ -102,20 +103,7 @@ if (isset($_SESSION['panier'])) {//si le panier a un produit au minimum
             </tr>
         </table>
     </div>
-
     <?php
-
-    if (!isset($_SESSION['Connexion'])) {//on regarde le statut de connection de l'utilisateur
-        ?>
-        <div class="connection">
-            <h5> enregistrer le bon de commande PDF</h5>
-                <a href="index.php?page=connexion.php" title="connexion">
-                    <img src="./admin/images/ici.jpg" width="200px">
-                </a>
-            </button>
-        </div>
-        <?php
-    }
 } else {// si le panier est vide
     ?>
     <h4>Votre panier est vide</h4>

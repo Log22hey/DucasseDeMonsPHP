@@ -68,5 +68,5 @@ if (isset($_GET['action'])) {
             }
             ?>
         </div>
-        <a class="lien "href="./page/print_boutique.php">Télécharger la boutique</a>
+        <a class="lienT "href="./page/print_boutique.php">Télécharger la boutique</a>
     </div>
