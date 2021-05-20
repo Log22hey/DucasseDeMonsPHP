@@ -7,10 +7,9 @@ include ('../classes/Client.class.php');
 include ('../classes/ClientDB.class.php');
 
 $cnx = Connexion::getInstance($dsn,$user,$password);
-$pr = array();
-$produit = new ClientDB($cnx);
+$cli = array();
+$client = new ClientDB($cnx);
 
 
 extract($_GET,EXTR_OVERWRITE);
-$pr[] = $produit->updateClient($champ,$id,$nouveau);
-
+$cli[] = $client->updateClient($champ,$id,$nouveau);

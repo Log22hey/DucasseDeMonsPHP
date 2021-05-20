@@ -1,7 +1,7 @@
 <?php
 include ('./lib/php/verifier_connexion.php');
 $prod = new ClientDB($cnx);
-$liste= $prod->getAllClient();
+$liste= $prod->getClient();
 $nbr=count($liste);
 ?>
 <table class="table">
@@ -10,7 +10,6 @@ $nbr=count($liste);
         <th scope="col">Id</th>
         <th scope="col">Nom</th>
         <th scope="col">Email</th>
-        <th scope="col">Password</th>
         <th scope="col">Adresse</th>
         <th scope="col">Numero</th>
         <th scope="col">Localite</th>
@@ -33,11 +32,6 @@ $nbr=count($liste);
             <td>
             <span contenteditable="true" name="email" id="<?php print $liste[$i]->id_client;?>">
             <?php print $liste[$i]->email;?>
-            </span>
-            </td>
-            <td>
-            <span contenteditable="true" name="password" id="<?php print $liste[$i]->id_client;?>">
-            <?php print $liste[$i]->password;?>
             </span>
             </td>
             <td>

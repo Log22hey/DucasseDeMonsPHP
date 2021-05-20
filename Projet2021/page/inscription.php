@@ -1,11 +1,9 @@
 <?php
 if(isset($_GET['submit_login'])) {
     extract($_GET, EXTR_OVERWRITE);
-
-    if (empty($nom) || empty($email) || empty($password) || empty($adresse) || empty($numero) || empty($localite) || empty($cp)) {
+    if (empty($nom) || empty($email) || empty($adresse) || empty($numero) || empty($localite) || empty($cp)) {
         $erreur = "<span class='txtRouge txtGras'>Veuillez remplir tous les champs</span>";
     } else {
-
         $cl = new ClientDB($cnx);
         $retour = $cl->addClient($_GET);
         if($retour==1)
@@ -28,12 +26,6 @@ if(isset($_GET['submit_login'])) {
         <label for="colFormLabelSm" class="col-sm-2 col-form-label txtGras text-right col-form-label-md offset-3">Email </label>
         <div class="col-sm-3 ">
             <input type="email" name="email" class="form-control form-control-md" id="colFormLabelSm" placeholder="Mons@bel.be">
-        </div>
-    </div>
-    <div class="form-group row">
-        <label for="colFormLabel" class="col-sm-2 text-right txtGras col-form-label offset-3">Mot de passe</label>
-        <div class="col-sm-3">
-            <input type="password" name="password" class="form-control" id="colFormLabel" placeholder="">
         </div>
     </div>
     <div class="form-group row">

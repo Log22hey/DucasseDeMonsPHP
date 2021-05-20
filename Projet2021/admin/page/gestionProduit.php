@@ -19,7 +19,6 @@ if(isset($_GET['editer_ajouter'])){
             print "retour : ".$retour;
         }
     }
-
 }
 ?>
 

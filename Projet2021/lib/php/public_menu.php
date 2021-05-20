@@ -25,6 +25,9 @@
             <li class="nav-item active">
                 <a class="nav-link" href="#"><span class="sr-only"></span></a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./index.php?page=inscription.php">Devenir membre<span class="sr-only"></span></a>
+            </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="./index.php?page=connexion.php"><img src="./admin/images/connect.png" class="d-block w-100" alt="Home"></a></li>
