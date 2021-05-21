@@ -4,8 +4,12 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
     </ol>
     <div class="carousel-inner">
+        <div class="carousel-item">
+            <img src="./admin/images/periraPas.jpeg"  height="316" width="448" alt="La Ducasse ne perira pas">
+        </div>
         <div class="carousel-item active">
             <iframe width="1024" height="576" src="https://www.youtube.com/embed/eLFu1sr_-TQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

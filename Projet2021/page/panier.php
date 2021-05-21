@@ -1,10 +1,10 @@
 <?php
-if (isset($_SESSION['panier'])) {//si le panier a un produit au minimum
+if (isset($_SESSION['panier'])) {
 
-    if (isset($_GET['viderPanier'])) { //si on clique sur vider le panier
-        $_SESSION['panier'] = null;  //le panier sera null
+    if (isset($_GET['viderPanier'])) { //vider panier
+        $_SESSION['panier'] = null;
 
-        print "<meta http-equiv=\"refresh\": Content=\"0;URL=./index.php\">";  //rafraichissement de la page
+        print "<meta http-equiv=\"refresh\": Content=\"0;URL=./index.php\">";
         $_SESSION['page'] = "panier.php";
     }
     ?>
@@ -25,7 +25,7 @@ if (isset($_SESSION['panier'])) {//si le panier a un produit au minimum
     </div>
 
     <?php
-    $panier = $_SESSION['panier'];//session contenant les données du panier du client
+    $panier = $_SESSION['panier'];
     $liste = $panier;
     $nbr = count($liste);
 
@@ -34,10 +34,10 @@ if (isset($_SESSION['panier'])) {//si le panier a un produit au minimum
     <div class="container d-flex">
         <table>
             <?php for ($i = 0;$i < $nbr;$i++) {
-            $id_p = $liste[$i]['id_produit'];
-            $_SESSION['id_produce'] = $id_p; //session contenant les id des produits du panier
+            $id_prod = $liste[$i]['id_produit'];
+            $_SESSION['id_produce'] = $id_prod; //session contenant les id des produits
 
-            $prod = $id->getProduitbyId($_SESSION['id_produce']);  //recuperation de l'id du produit pour afficher ses informations
+            $prod = $id->getProduitbyId($_SESSION['id_produce']);  //afficher ses informations du prod avec id
             $nbr2 = count($prod);
             ?>
             <tr>
@@ -63,14 +63,13 @@ if (isset($_SESSION['panier'])) {//si le panier a un produit au minimum
 
                 <?php
                 $stringArra = $id_pro;
-                $FloatArray = array_map(//convertion du tableau array string en float
+                $FloatArray = array_map(
                     function ($id_pro) {
                         return (float)$id_pro;
                     },
                     $stringArra
                 );
-
-                $total = array_sum($FloatArray); //SOMME des prix des produits pour faire le total
+                $total = array_sum($FloatArray); //somme des prix des produits pour faire le total
                 ?>
                 <?php
                 }

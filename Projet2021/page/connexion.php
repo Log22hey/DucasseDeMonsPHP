@@ -32,7 +32,7 @@
                 <div class="form-group row">
                     <div class="col-sm-4 offset-5">
                         <input type="hidden" name="page" value="connexion.php"/>
-                        <input type="submit" name="submit_login" class="btn btn-danger"  placeholder="col-form-label-lg" value="Connexion" >
+                        <input type="submit" name="submit_login" class="btn btn-light"  placeholder="col-form-label-lg" value="Connexion" >
                     </div>
                 </div>
             </form>

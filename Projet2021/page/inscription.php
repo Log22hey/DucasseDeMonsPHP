@@ -54,7 +54,7 @@ if(isset($_GET['submit_login'])) {
     </div><br>
     <div class="form-group row">
         <div class="col-sm-4 offset-5">
-            <input type="submit" name="submit_login" class="btn btn-light"  placeholder="col-form-label-lg" value="s'enregister" >
+            <input type="submit" name="submit_login" class="btn btn-light"  placeholder="col-form-label-lg" value="s'inscrire" >
         </div>
     </div>
 </form>

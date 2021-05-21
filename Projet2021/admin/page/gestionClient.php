@@ -1,7 +1,7 @@
 <?php
 include ('./lib/php/verifier_connexion.php');
-$prod = new ClientDB($cnx);
-$liste= $prod->getClient();
+$cli = new ClientDB($cnx);
+$liste= $cli->getAllClient();
 $nbr=count($liste);
 ?>
 <table class="table">

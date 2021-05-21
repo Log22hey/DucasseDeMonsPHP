@@ -1,12 +1,12 @@
 <?php
 header('Content-Type: application/json');
 
-include ('../pg_connect.php');
+include ('../pgConnect.php');
 include ('../classes/Connexion.class.php');
 include ('../classes/Client.class.php');
 include ('../classes/ClientDB.class.php');
 
-$cnx = Connexion::getInstance($dsn,$user,$password);
+$cnx = Connexion::getInstance($dsn,$user,$pass);
 $cli = array();
 $client = new ClientDB($cnx);
 

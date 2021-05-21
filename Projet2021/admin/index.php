@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <?php
 session_start();
@@ -9,7 +8,7 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
 ?>
 
 <html>
-    <head> <meta charset="UTF-8">        
+    <head> <meta charset="UTF-8">
         <title>Ducasse de Mons</title>
         <link rel="shorcut icon"  href="./images/licon.JPG" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous"/>
@@ -18,7 +17,8 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
         <link rel="stylesheet" href="lib/css/custom2021.css" />
         <link rel="stylesheet" type="text/css" href="lib/css/2021Style.css"/>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./lib/js/functions.js"></script>
     </head>
 
     <body class="body">
@@ -28,15 +28,15 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
                 if (file_exists('./lib/php/header.php')) {
                     include('./lib/php/header.php');
                 }
-                ?>  
-            </div> 
+                ?>
+            </div>
             <div class="container menu">
                 <?php
                 if (file_exists('./lib/php/admin_menu.php')) {
                     include ('./lib/php/admin_menu.php');
                 }
-                ?>   
-            </div>        
+                ?>
+            </div>
         </header>
         <section>
             <div class="container">
@@ -73,4 +73,4 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
                 ?>
         </footer>
     </body>
-</html> 
+</html>

@@ -17,6 +17,8 @@ $cnx = Connexion:: getInstance($dsn, $user, $pass);
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
         <link rel="stylesheet" href="./admin/lib/css/custom2021.css" />
         <link rel="stylesheet" type="text/css" href="./admin/lib/css/2021Style.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./lib/js/functions.js"></script>
     </head>
     <br>
     <body class="container body">

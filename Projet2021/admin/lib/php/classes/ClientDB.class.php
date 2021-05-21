@@ -2,8 +2,7 @@
 
 class ClientDB extends Client{
     private $_db;
-    private $_data=array();
-    private $_resulset;
+    private $_array = array();
 
     public function __construct($cnx){//$cnx envoyé depuis la page qui instancie
         $this->_db = $cnx;
@@ -28,21 +27,16 @@ class ClientDB extends Client{
         }
     }
 
-    public function getClient() {
-        try {
-            $query = "select * from client order by id_client";
-            $resultset = $this->_db->prepare($query);
-            $resultset->execute();
+    public function getAllClient(){
+        $query = "select * from produit";
+        $_resultset = $this->_db->prepare($query);
+        $_resultset->execute();
 
-            $data = $resultset->fetch();
-        } catch (PDOException $e) {
-            print $e->getMessage();
+        while( $d = $_resultset->fetch()){
+            $_data[] = new Client($d);
         }
-        if (!empty($data)) {
-            return $data;
-        } else {
-            return null;
-        }
+        //var_dump($_data);
+        return $_data;
     }
 
     public function updateClient($champ,$id,$valeur){
